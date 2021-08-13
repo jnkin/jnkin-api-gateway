@@ -13,7 +13,7 @@ pipeline {
    stages {
       stage('Preparation') {
          steps {
-            git credentialsId: 'GitHub', url: "https://github.com/${ORGANIZATION_NAME}/${SERVICE_NAME}"
+            git 'https://github.com/jnkin/jnkin-api-gateway.git'
          }
       }
       stage('Build') {
